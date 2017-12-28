@@ -32,7 +32,7 @@ class BurgerBuilder extends Component {
 
     componentDidMount () {
         console.log(this.props);
-        axios.get( 'https://react-burger-builder-1afef.firebaseio.com/ingredients.json' )
+        axios.get( 'https://react-burger-builder-1afef.firebaseio.com/orders/-L1O1jP-UOf8wL6PKXK-/ingredients.json' )
             .then( response => {
                 this.setState( { ingredients: response.data } );
             } )
